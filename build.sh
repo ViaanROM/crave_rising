@@ -1,5 +1,6 @@
 # Rising OS Revived for Nord CE 3 Lite 5G
-USE_CCACHE=50
+export USE_CCACHE=1
+ccache -M 50G
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/oneplus && \
 rm -rf prebuilts/clang/host/linux-x86 && \
