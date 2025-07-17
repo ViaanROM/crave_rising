@@ -30,6 +30,6 @@ $(call inherit-product, vendor/lineage/config/rising_larry.mk) && \
 
 .build/envsetup.sh && \ 
 
-riseup larry qpr2 && \
+riseup larry user && \
 
 rise b
