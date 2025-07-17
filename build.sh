@@ -24,9 +24,7 @@ git clone https://github.com/ViaanROM/android_kernel_oneplus_sm6375 -b lineage-2
 
 git clone https://github.com/ViaanROM/android_hardware_oplus -b lineage-22.2 hardware/oplus && \
 
-$(call inherit-product, vendor/lineage/config/rising_larry.mk) && \
-
-.build/envsetup.sh && \ 
+source .build/envsetup.sh && \ 
 
 riseup larry user && \
 
