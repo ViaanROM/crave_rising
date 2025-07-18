@@ -24,5 +24,5 @@ git clone https://github.com/ViaanROM/android_hardware_oplus -b lineage-22.2 har
 
 # Setup environment and start build
 source build/envsetup.sh && \
-riseup rising_larry user && \
+riseup larry user && \
 rise b -j$(nproc)
