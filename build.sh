@@ -23,4 +23,4 @@ git clone https://github.com/ViaanROM/local_manifests --depth 1 -b main .repo/lo
 # Setup environment and build
 source build/envsetup.sh ; \
 lunch lineage_larry-user ; \
-mka b
+mka bacon
