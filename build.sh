@@ -1,6 +1,6 @@
 # RisingOS Revived for Nord CE 3 Lite 5G (larry)
 # Install CCACHE
-sudo apt update && sudo apt install ccache ; \
+sudo apt update && sudo apt install -y ccache ; \
 # Enable ccache for faster builds
 export USE_CCACHE=1 ; \
 ccache -M 25G ; \
