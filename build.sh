@@ -1,12 +1,12 @@
 # === RisingOS Revived Build Script for Nord CE 3 Lite (larry) ===
 
 # Clean previous local sources
-rm -rf .repo/local_manifests \
-       device/oneplus \
-       vendor/oneplus \
-       kernel/oneplus \
-       hardware/oplus \
-       prebuilts/clang/host/linux-x86
+rm -rf .repo/local_manifests
+rm -rf device/oneplus
+rm -rf vendor/oneplus
+rm -rf kernel/oneplus
+rm -rf hardware/oplus
+rm -rf prebuilts/clang/host/linux-x86
 
 # Repo Init & Sync
 repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --depth=1 --git-lfs
