@@ -23,5 +23,6 @@ git clone https://github.com/ViaanROM/android_hardware_oplus -b lineage-22.2 har
 
 # Setup environment and build
 source build/envsetup.sh ; \
-breakfast lineage_larry-user ; \
-mka bacon
+make installclean
+croot
+brunch larry-user
