@@ -1,10 +1,4 @@
 # RisingOS Revived for Nord CE 3 Lite 5G (larry)
-# Install CCACHE
-sudo apt update && sudo apt install -y ccache ; \
-# Enable ccache for faster builds
-export USE_CCACHE=1 ; \
-ccache -M 25G ; \
-
 # Clean up previous sources
 rm -rf .repo/local_manifests ; \
 rm -rf device/oneplus ; \
@@ -17,7 +11,7 @@ rm -rf prebuilts/clang/host/linux-x86 ; \
 repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --depth=1 --git-lfs ; \
 
 # Sync the Source Code
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+/opt/crave/resync.sh
 
 # Copy Trees, Blobs
 git clone https://github.com/ViaanROM/android_device_oneplus_larry -b lineage-22.2 device/oneplus/larry ; \
