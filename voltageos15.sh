@@ -12,7 +12,7 @@ rm -rf .repo/local_manifests
 
 # Initialize VoltageOS 15-QPR2 repo
 echo "Initializing VoltageOS repo..."
-repo init -u https://github.com/VoltageOS/manifest.git -b 15-qpr2 --git-lfs
+repo init -u https://github.com/VoltageOS-staging/manifest.git -b 16 --git-lfs
 
 # Sync source
 echo "Syncing source (repo sync)..."
@@ -36,7 +36,7 @@ git clone https://github.com/MurtazaKolachi/kernel_xiaomi_apollo -b main kernel/
 # Clone hardware tree
 echo "Cloning hardware tree..."
 rm -rf hardware/xiaomi
-git clone https://github.com/VoltageOS-staging/hardware_xiaomi -b 15 hardware/xiaomi
+git clone https://github.com/VoltageOS-staging/hardware_xiaomi -b 16 hardware/xiaomi
 
 # Clone device settings
 echo "Cloning device settings..."
