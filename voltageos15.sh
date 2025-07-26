@@ -36,7 +36,7 @@ git clone https://github.com/MurtazaKolachi/kernel_xiaomi_apollo -b main kernel/
 # Clone hardware tree
 echo "Cloning hardware tree..."
 rm -rf hardware/xiaomi
-git clone https://github.com/VoltageOS-staging/hardware_xiaomi -b 16 hardware/xiaomi
+git clone https://github.com/VoltageOS-staging/hardware_xiaomi -b 15 hardware/xiaomi
 
 # Clone device settings
 echo "Cloning device settings..."
