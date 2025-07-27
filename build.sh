@@ -11,7 +11,7 @@ rm -rf prebuilts/clang/host/linux-x86
 # Repo Init & Sync
 repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --depth=1 --git-lfs
 # Sync Repos
-/opt/crave/resync.sh
+repo sync -c --force-sync
 
 # Clone Trees and Blobs
 git clone https://github.com/ViaanROM/android_device_oneplus_larry -b lineage-22.2 device/oneplus/larry
