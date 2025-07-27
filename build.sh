@@ -10,6 +10,7 @@ rm -rf prebuilts/clang/host/linux-x86
 
 # Repo Init & Sync
 repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --depth=1 --git-lfs
+# Sync Repos
 /opt/crave/resync.sh
 
 # Clone Trees and Blobs
@@ -26,7 +27,8 @@ git clone https://github.com/ViaanROM/android_hardware_oplus -b lineage-22.2 har
 
 source build/envsetup.sh
 make installclean
-brunch larry-user
+breakfast lineage_larry-user
+mka bacon
 
 # Save Vanilla Build Output
 rm -rf out/target/product/vanilla
@@ -45,7 +47,8 @@ cd ../../..
 # Re-source and build
 source build/envsetup.sh
 make installclean
-brunch larry-user
+breakfast lineage_larry-user
+mka bacon
 
 # Save GApps Build Output
 rm -rf out/target/product/gapps
