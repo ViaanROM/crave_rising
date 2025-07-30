@@ -21,35 +21,9 @@ git clone https://github.com/ViaanROM/proprietary_vendor_oneplus_sm6375-common -
 git clone https://github.com/ViaanROM/android_kernel_oneplus_sm6375 -b lineage-22.2 kernel/oneplus/sm6375
 git clone https://github.com/ViaanROM/android_hardware_oplus -b lineage-22.2 hardware/oplus
 
-# ============================
-#       VANILLA BUILD
-# ============================
-
+# Build the ROM
 source build/envsetup.sh
-make installclean
-lunch lineage_larry-user
-mka bacon
+riseup larry user
+rise b
 
-# Save Vanilla Build Output
-rm -rf out/target/product/vanilla
-mv out/target/product/larry out/target/product/vanilla
 
-# ============================
-#       GAPPS BUILD
-# ============================
-
-# Swap makefile
-cd device/oneplus/larry
-rm -f larry.mk
-mv gapps.txt larry.mk
-cd ../../..
-
-# Re-source and build
-source build/envsetup.sh
-make installclean
-breakfast lineage_larry-user
-mka bacon
-
-# Save GApps Build Output
-rm -rf out/target/product/gapps
-mv out/target/product/larry out/target/product/gapps
