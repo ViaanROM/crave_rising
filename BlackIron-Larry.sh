@@ -1,4 +1,6 @@
 # Black Iron Project ROM for OnePlus Nord CE 3 Lite 5G (larry)
+cd /mnt/sdb
+rm -rf /mnt/sdb
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/oneplus; \
 rm -rf prebuilts/clang/host/linux-x86 ; \
@@ -11,5 +13,5 @@ git clone https://github.com/ViaanROM/proprietary_vendor_oneplus_sm6375-common -
 git clone https://github.com/ViaanROM/android_kernel_oneplus_sm6375 -b lineage-22.2 kernel/oneplus/sm6375 && \
 git clone https://github.com/ViaanROM/android_hardware_oplus -b lineage-22.2 hardware/oplus; \
 source build/envsetup.sh
-lunch lineage_larry-user
-m bacon
+blkilunch larry user
+blki b
