@@ -1,6 +1,10 @@
 #!/bin/bash
 # === RisingOS Revived Build Script for Nord CE 3 Lite (larry) ===
-
+# RM RF
+rm -rf Derp Evox Lineage
+# Make the directory
+mkdir Rising16
+cd Rising16
 # --- Clean previous local sources ---
 rm -rf .repo/local_manifests
 rm -rf device/oneplus
