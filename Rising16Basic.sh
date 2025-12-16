@@ -1,5 +1,4 @@
-mkdir Rising16
-cd Rising16
+cd my-rising-os-repo
 repo init -u https://github.com/RisingOS-Revived/android -b sixteen --git-lfs
 /opt/crave/resync.sh
 git clone https://github.com/anshedu/android_device_oneplus_larry -b lineage-23.0 device/oneplus/larry
